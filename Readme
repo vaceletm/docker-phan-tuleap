@@ -1,4 +1,4 @@
-docker run -v $PWD:/mnt/src --rm -u "$(id -u):$(id -g)" -w /mnt/src phan phan --progress-bar -f /mnt/src/files -o /mnt/src/analysis.txt
+docker run -v $PWD:/src --rm -u "$(id -u):$(id -g)" phan phan --progress-bar -f files -o analysis.txt
 
 https://github.com/etsy/phan/wiki/Tutorial-for-Analyzing-a-Large-Sloppy-Code-Base
 
